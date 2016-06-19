@@ -64,6 +64,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         uimap.addAnnotation(point)
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+         let name = "Pattern~\(self.title)"
+        
+        let tracker = GAI.sharedInstance().defaultTracker
+        tracker.set(kGAIScreenName, value: name)
+        
+        let builder = GAIDictionaryBuilder.createScreenView()
+        tracker.send(builder.build() as [NSObject : AnyObject])
+        
+        print("screen名稱\(name)")
+        print("trackerg是\(tracker)")
+        print("builde是\(builder)")
+    }
+    
 //    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
 //        //取得目前的座標位置
 //        let c = locations[0] as! CLLocation;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A72A2069370E8D8F016AD756 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBEDDD7F6C4ACCF909CE101 /* Pods.framework */; };
 		BE8297541D09560100A2FDF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8297531D09560100A2FDF1 /* AppDelegate.swift */; };
 		BE8297561D09560100A2FDF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8297551D09560100A2FDF1 /* ViewController.swift */; };
 		BE8297591D09560100A2FDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8297571D09560100A2FDF1 /* Main.storyboard */; };
@@ -14,9 +15,14 @@
 		BE82975E1D09560100A2FDF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE82975D1D09560100A2FDF1 /* Assets.xcassets */; };
 		BE8297611D09560100A2FDF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE82975F1D09560100A2FDF1 /* LaunchScreen.storyboard */; };
 		BE8297691D0957F700A2FDF1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8297681D0957F700A2FDF1 /* MapKit.framework */; };
+		BEFA803D1D1679890089AA6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEFA803C1D1679890089AA6B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AB88BF20A8F84EC73C8D923 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		69776BAA2DF5039B0C4C5353 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6BBEDDD7F6C4ACCF909CE101 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5BC2DD1D1658E400F9F0B5 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		BE8297501D09560100A2FDF1 /* map_checkpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = map_checkpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE8297531D09560100A2FDF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE8297551D09560100A2FDF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +32,7 @@
 		BE8297601D09560100A2FDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE8297621D09560100A2FDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE8297681D0957F700A2FDF1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BEFA803C1D1679890089AA6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,18 +41,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE8297691D0957F700A2FDF1 /* MapKit.framework in Frameworks */,
+				A72A2069370E8D8F016AD756 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53EC1A5AE5EB334A0B5C7377 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BBEDDD7F6C4ACCF909CE101 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BE8297471D09560100A2FDF1 = {
 			isa = PBXGroup;
 			children = (
 				BE8297681D0957F700A2FDF1 /* MapKit.framework */,
 				BE8297521D09560100A2FDF1 /* map_checkpoint */,
 				BE8297511D09560100A2FDF1 /* Products */,
+				C864C45D3F59F5675E5A74B2 /* Pods */,
+				53EC1A5AE5EB334A0B5C7377 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,9 +84,20 @@
 				BE82975D1D09560100A2FDF1 /* Assets.xcassets */,
 				BE82975F1D09560100A2FDF1 /* LaunchScreen.storyboard */,
 				BE8297621D09560100A2FDF1 /* Info.plist */,
+				BEFA803C1D1679890089AA6B /* GoogleService-Info.plist */,
 				BE82975A1D09560100A2FDF1 /* map_checkpoint.xcdatamodeld */,
+				BE5BC2DD1D1658E400F9F0B5 /* BridgeHeader.h */,
 			);
 			path = map_checkpoint;
+			sourceTree = "<group>";
+		};
+		C864C45D3F59F5675E5A74B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AB88BF20A8F84EC73C8D923 /* Pods.debug.xcconfig */,
+				69776BAA2DF5039B0C4C5353 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE8297651D09560100A2FDF1 /* Build configuration list for PBXNativeTarget "map_checkpoint" */;
 			buildPhases = (
+				902AEFE3ECE6888FD4028072 /* Check Pods Manifest.lock */,
 				BE82974C1D09560100A2FDF1 /* Sources */,
 				BE82974D1D09560100A2FDF1 /* Frameworks */,
 				BE82974E1D09560100A2FDF1 /* Resources */,
+				CA30BBDEFB211E3926D22054 /* Embed Pods Frameworks */,
+				14D3A3815093F1BA63240099 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,12 +171,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE8297611D09560100A2FDF1 /* LaunchScreen.storyboard in Resources */,
+				BEFA803D1D1679890089AA6B /* GoogleService-Info.plist in Resources */,
 				BE82975E1D09560100A2FDF1 /* Assets.xcassets in Resources */,
 				BE8297591D09560100A2FDF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14D3A3815093F1BA63240099 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		902AEFE3ECE6888FD4028072 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA30BBDEFB211E3926D22054 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE82974C1D09560100A2FDF1 /* Sources */ = {
@@ -264,6 +345,7 @@
 		};
 		BE8297661D09560100A2FDF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AB88BF20A8F84EC73C8D923 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -273,11 +355,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.map-checkpoint";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = map_checkpoint/BridgeHeader.h;
 			};
 			name = Debug;
 		};
 		BE8297671D09560100A2FDF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69776BAA2DF5039B0C4C5353 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -287,6 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.map-checkpoint";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = map_checkpoint/BridgeHeader.h;
 			};
 			name = Release;
 		};
