@@ -15,7 +15,7 @@
 		BE82975E1D09560100A2FDF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE82975D1D09560100A2FDF1 /* Assets.xcassets */; };
 		BE8297611D09560100A2FDF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE82975F1D09560100A2FDF1 /* LaunchScreen.storyboard */; };
 		BE8297691D0957F700A2FDF1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8297681D0957F700A2FDF1 /* MapKit.framework */; };
-		BEFA803D1D1679890089AA6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEFA803C1D1679890089AA6B /* GoogleService-Info.plist */; };
+		BEFA803F1D191B330089AA6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEFA803E1D191B330089AA6B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 		BE8297601D09560100A2FDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE8297621D09560100A2FDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE8297681D0957F700A2FDF1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		BEFA803C1D1679890089AA6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BEFA803E1D191B330089AA6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 				BE82975D1D09560100A2FDF1 /* Assets.xcassets */,
 				BE82975F1D09560100A2FDF1 /* LaunchScreen.storyboard */,
 				BE8297621D09560100A2FDF1 /* Info.plist */,
-				BEFA803C1D1679890089AA6B /* GoogleService-Info.plist */,
+				BEFA803E1D191B330089AA6B /* GoogleService-Info.plist */,
 				BE82975A1D09560100A2FDF1 /* map_checkpoint.xcdatamodeld */,
 				BE5BC2DD1D1658E400F9F0B5 /* BridgeHeader.h */,
 			);
@@ -171,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE8297611D09560100A2FDF1 /* LaunchScreen.storyboard in Resources */,
-				BEFA803D1D1679890089AA6B /* GoogleService-Info.plist in Resources */,
+				BEFA803F1D191B330089AA6B /* GoogleService-Info.plist in Resources */,
 				BE82975E1D09560100A2FDF1 /* Assets.xcassets in Resources */,
 				BE8297591D09560100A2FDF1 /* Main.storyboard in Resources */,
 			);
@@ -352,7 +352,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = map_checkpoint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.map-checkpoint";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.mapcheckpoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = map_checkpoint/BridgeHeader.h;
@@ -368,7 +368,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = map_checkpoint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.map-checkpoint";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.mapcheckpoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = map_checkpoint/BridgeHeader.h;

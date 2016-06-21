@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>TRACKING_ID</key>
-	<string>UA-79574686-1</string>
+	<string>UA-79574686-2</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.appcoda.map-checkpoint</string>
+	<string>com.appcoda.mapcheckpoint</string>
 	<key>PROJECT_ID</key>
 	<string>mapcheckpoint</string>
 	<key>IS_ADS_ENABLED</key>
@@ -21,6 +21,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<false/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1073165271993:ios:3f2aabf81f5edbdf</string>
+	<string>1:1073165271993:ios:54b142ed63f5e883</string>
 </dict>
 </plist>
