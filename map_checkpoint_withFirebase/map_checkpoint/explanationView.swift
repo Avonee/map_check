@@ -20,7 +20,7 @@ var userDefault:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         // Do any additional setup after loading the view.
         
         self.userDefault.setObject(nickNameGet.text!, forKey: "nickName")
-        FIRDatabase.database().reference().child("user").setValue(["uid": nickNameGet.text!])
+//        FIRDatabase.database().reference().child("user").setValue(["uid": nickNameGet.text!])
     }
 
     override func didReceiveMemoryWarning() {

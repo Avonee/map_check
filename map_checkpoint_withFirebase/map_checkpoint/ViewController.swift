@@ -48,6 +48,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         location.distanceFilter = CLLocationDistance(10); //表示移動10公尺再更新座標資訊
         
         
+        //取得firebase 現有的座標資料
+    _ = FIRDatabase.database().reference().observeEventType(FIRDataEventType.Value, withBlock: { (snapshot) in
+            let postDict = snapshot.value as! [String : AnyObject]
+            print("取到啥？\(postDict)")
+        })
+
+        
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -73,7 +80,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         let name: String? = userDefault.objectForKey("nickName") as! String?
         
-        FIRDatabase.database().reference().child("user").setValue(["uid": name!, "location": [c.coordinate.latitude,c.coordinate.longitude]])
+//        FIRDatabase.database().reference().child("users").setValue(["uid": name!, "location": ["lat":c.coordinate.latitude,"lng":c.coordinate.longitude]])
+        
+        
+        FIRDatabase.database().reference().child("users/\(name!)").setValue(["location": ["lat":c.coordinate.latitude,"lng":c.coordinate.longitude]])
+        
+        ///有給亂碼的方法
+//        let key = FIRDatabase.database().reference().child("users").childByAutoId().key
+//        let post = ["uid": name!,
+//                    "location": [c.coordinate.latitude,c.coordinate.longitude]]
+//        let childUpdates = ["\(key)": post,
+//                            "/user-update/\(name!)/\(key)/": post]
+//        
+//        FIRDatabase.database().reference().updateChildValues(childUpdates)
 
     }
     

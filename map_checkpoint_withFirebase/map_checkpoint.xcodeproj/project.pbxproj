@@ -10,6 +10,7 @@
 		6F266FA5342F705BE0F47157 /* Pods_map_checkpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE06F3DE2277BA4CE55B57C /* Pods_map_checkpoint.framework */; };
 		BE69834E1D277B2A00599F15 /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE69834D1D277B2A00599F15 /* loginView.swift */; };
 		BE6983501D277C1C00599F15 /* explanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE69834F1D277C1C00599F15 /* explanationView.swift */; };
+		BE78C1DB1D476E5A002C252E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE78C1DA1D476E5A002C252E /* GoogleService-Info.plist */; };
 		BE8297541D09560100A2FDF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8297531D09560100A2FDF1 /* AppDelegate.swift */; };
 		BE8297561D09560100A2FDF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8297551D09560100A2FDF1 /* ViewController.swift */; };
 		BE8297591D09560100A2FDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8297571D09560100A2FDF1 /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		BE82975E1D09560100A2FDF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE82975D1D09560100A2FDF1 /* Assets.xcassets */; };
 		BE8297611D09560100A2FDF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE82975F1D09560100A2FDF1 /* LaunchScreen.storyboard */; };
 		BE8297691D0957F700A2FDF1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8297681D0957F700A2FDF1 /* MapKit.framework */; };
-		BEA8107E1D27A446002A9DBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEA8107D1D27A446002A9DBC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +28,7 @@
 		BE5BC2DD1D1658E400F9F0B5 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		BE69834D1D277B2A00599F15 /* loginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		BE69834F1D277C1C00599F15 /* explanationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = explanationView.swift; sourceTree = "<group>"; };
+		BE78C1DA1D476E5A002C252E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE8297501D09560100A2FDF1 /* map_checkpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = map_checkpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE8297531D09560100A2FDF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE8297551D09560100A2FDF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		BE8297601D09560100A2FDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE8297621D09560100A2FDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE8297681D0957F700A2FDF1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		BEA8107D1D27A446002A9DBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 				BE82975D1D09560100A2FDF1 /* Assets.xcassets */,
 				BE82975F1D09560100A2FDF1 /* LaunchScreen.storyboard */,
 				BE8297621D09560100A2FDF1 /* Info.plist */,
-				BEA8107D1D27A446002A9DBC /* GoogleService-Info.plist */,
+				BE78C1DA1D476E5A002C252E /* GoogleService-Info.plist */,
 				BE82975A1D09560100A2FDF1 /* map_checkpoint.xcdatamodeld */,
 				BE5BC2DD1D1658E400F9F0B5 /* BridgeHeader.h */,
 			);
@@ -179,7 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE8297611D09560100A2FDF1 /* LaunchScreen.storyboard in Resources */,
-				BEA8107E1D27A446002A9DBC /* GoogleService-Info.plist in Resources */,
+				BE78C1DB1D476E5A002C252E /* GoogleService-Info.plist in Resources */,
 				BE82975E1D09560100A2FDF1 /* Assets.xcassets in Resources */,
 				BE8297591D09560100A2FDF1 /* Main.storyboard in Resources */,
 			);
